@@ -1,0 +1,13 @@
+# Netlify Configuration File
+# Tells Netlify to build the React frontend from the 'frontend' directory
+
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+# Redirect rule to handle React Router / single page app paths
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
