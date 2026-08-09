@@ -6,6 +6,9 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  VITE_API_URL = "https://backend-lemon-ten-34.vercel.app/api"
+
 # Redirect rule to handle React Router / single page app paths
 [[redirects]]
   from = "/*"
